@@ -1,0 +1,221 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: serif !important;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+header{
+    /* height: 70px; */
+    background-color: rgba(164, 164, 164, 0.577);
+    padding: 10px 0;
+    font-family: serif;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+.header-content  .brand{
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(0, 98, 255);
+
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav  li a{
+    display: block;
+    color: rgb(0, 98, 255);
+    font-size: 20px;
+    min-width: 70px;
+    padding: 5px;
+    margin: 0px 5px;
+    text-decoration: none;
+}
+nav  li a:hover{
+    text-decoration: underline;
+}
+nav  ul#user_info {
+    display: none;
+}
+/* *************************************************************************** */
+nav ul#user_info li .fa-cart-shopping {
+    color: rgb(0, 98, 255);
+    font-size: 25px;
+    margin: 10px -30px;
+    position: absolute;
+    cursor: pointer;
+}
+nav ul#user_info li{
+    margin: auto 10px;
+    position: relative;
+}
+.cart_down{
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+.cart_down i{
+    color: #5c5b5bce;
+}
+.welcome{
+    text-align: center;
+    color: rgb(0, 98, 255);
+    font-weight: bolder;
+    display: none;
+}
+.welcome span{
+    text-transform: uppercase;
+}
+nav ul#user_info li .badge {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    color: rgb(0, 98, 255);
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    top:20px;
+    left:-12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+}
+
+.carts_products {
+    position: absolute;
+    width:260px;
+    transform: translate(-170px,0);
+    background-color: #dfdfdf;
+    top: 56px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 5px;
+    z-index: 1;
+    display: none;
+}
+.carts_products div{
+    width: 230px;
+    border-radius: 5px;
+    padding: 5px 0px;
+    margin: 0 auto 7px auto;
+    color: rgb(0, 98, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.fa-plus , .fa-minus{
+    font-size: 14px;
+    cursor: pointer;
+}
+.number{
+    margin: 0 auto 0 10px;
+}
+.carts_products a {
+   display: block;
+   padding: 0;
+   font-size: large;
+   color: rgb(0, 98, 255);
+   text-align: center;
+   text-decoration: none;
+}
+/* *************************************************************************** */
+.parent{
+    width: 90%;
+    margin: 20px auto;
+}
+/* *************************************************************************** */
+/* ضبط قسم المنتجات */
+.products {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+
+}
+.card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+.card:hover{
+    border: 1px solid rgba(51, 117, 232, 0.655);
+    transform: translateY(-8px);
+    transition: 0.6s;
+}
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.card-body {
+    padding: 10px;
+}
+.product_item_action {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+  }
+
+.product_item_action .fav{
+    font-size: 1.4rem;
+    color:rgb(171 , 171 , 171);
+    cursor: pointer;
+    margin-left: auto; 
+}
+/* *************************************************************** */
+.login-parent{
+    width: 70%;
+    margin:70px auto;
+    background-color: #c5c3c35d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+.login-parent p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #464545;
+}
+.login-parent p a{
+    text-decoration: none;
+}
+.show_price , .favorate{
+    margin: auto;
+    text-align: center;
+}
+
+.line{
+    width: 50px;
+    height: 2px;
+    background-color: red;
+    margin: auto;
+    margin-top:-15px ;
+}
+.aml{
+    margin-top: -50px;
+}
+.fav_product{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+.aya{
+    margin: auto;
+}
+.aya:hover{
+    transform: translateY(-8px);
+    transition: 0.5s;
+}
+
